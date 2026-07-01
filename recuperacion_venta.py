@@ -1,8 +1,4 @@
 def calcular_descuento(subtotal):
-    
-    Entrada: subtotal (int/float)
-    Proceso: Verifica si el subtotal es mayor o igual a 50000 para aplicar un 10% de descuento.
-    Salida: descuento calculado (float)
   
     if subtotal >= 50000:
         return subtotal * 0.10
