@@ -1,9 +1,5 @@
 def calcular_descuento(subtotal):
-    """
-    Entrada: subtotal del producto.
-    Proceso: Aplica un 10% si el subtotal es mayor o igual a 50000.
-    Salida: Retorna el descuento calculado.
-    """
+    
     if subtotal >= 50000:
         return subtotal * 0.10
     else:
@@ -25,15 +21,14 @@ def mostrar_resultado(nombre_producto, subtotal, descuento, total):
 continuar = "s"
 
 while continuar.lower() == "s":
-    # Solicitar nombre del producto y validar que no esté vacío
+    
     while True:
         nombre_producto = input("Ingrese el nombre del producto: ").strip()
         if nombre_producto != "":
             break
         print("Error: El nombre no puede estar vacío.")
 
-    # Solicitar precio usando try/except y validar mayor a cero
-    while True:
+     while True:
         try:
             precio_unitario = int(input("Ingrese el precio unitario: "))
             if precio_unitario > 0:
@@ -43,7 +38,6 @@ while continuar.lower() == "s":
         except ValueError:
             print("Error: El precio debe ser un número entero.")
 
-    # Solicitar cantidad usando try/except y validar mayor a cero
     while True:
         try:
             cantidad = int(input("Ingrese la cantidad comprada: "))
